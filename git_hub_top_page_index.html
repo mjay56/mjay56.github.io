@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Art Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      padding: 10px;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Class Artwork Gallery</h1>
+    <p>p5js 수업</p>
+  </header>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="img/art1.png" alt="art1" />
+      <p>과제 1</p>
+    </div>
+
+    <div class="card">
+      <img src="img/art4.png" alt="art4" />
+      <p>과제 4</p>
+    </div>
+
+    <div class="card">
+      <img src="img/art2.png" alt="art2" />
+      <p>과제 2</p>
+    </div>
+
+    <div class="card">
+      <img src="img/art3.png" alt="art3" />
+      <p>과제 3</p>
+    </div>
+  </section>
+</body>
+</html>
